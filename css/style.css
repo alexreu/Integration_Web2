@@ -68,106 +68,139 @@
 body{
     background-color: #F8F9EB;
 }
-li{
-    margin-right: 5px;
-}
-hr{
+hr {
+    border: 2px solid #ffffff;
     width: 50px;
-    background-color: #ffffff;
-    height: 2px;
-    border: 0;
-    margin-left: 0; 
-    margin: 35
-    px 0 10px 0;
+    margin-left: 10px;
 }
-p{
-    padding-bottom: 50px;
-} 
 .container{
-    width: 1020px;
+    width: 850px;
     margin: auto;
-} 
+}
+.container_small {
+    width: 600px;
+    margin: auto;
+}
+.underline {
+    text-decoration: underline;
+}
+
 /* debut header */
-#header{
-  background-image: url(../img/index_fond.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 350px;
-  width: 100%;   
+header {
+    height: 400px;
+    width: 100%;
+    background: url(../img/index.png), url(../img/particles.png), url(../img/index_fond.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
-.logo_header, .particle_header, .bottom_header{
-    position: absolute;
+.logo {
+    background: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position-x: center;
+    background-position-y: 60px;
+    height: 400px;
+    width: 100%;
 }
-.logo{
-    height: auto;
-    width: 20%;
-}
-.logo_header{
-    left: 45%;
-    top: 7%
-} 
-.particle_header{
-    left: 20%;
-}
-.bottom_header{
-    left: 25%;
-} 
 /* fin header */
 
-/* debut center block */
-.article_content{
+/* debut main */
+main {
+    margin-top: 50px;
+}
+
+.row {
     display: flex;
-    align-items: center;
-    list-style: none;
-    margin-bottom: -17px;
+    justify-content: space-between;
+    margin-top: 6px;
 }
-.article_1{
-    height: 150px;
-    width: 230px;
-    background-color: #ADCEB8;
-    padding: 20px 0px 30px 10px;
+.row > article {
+    width: 208px;
+    height: 208px;
 }
-.article_2{
-    background-color: #ECC7A1;
-    height: 150px;
-    width: 230px;
-    padding: 20px 0px 30px 10px;
+.body_article {
+    margin-top: 50px;
+    padding-left: 10px;
 }
-.article_3{
-    background-color: #CAEADE;
-    height: 150px;
-    width: 230px;
-    padding: 20px 0px 30px 10px;
 
+.background_number_1 {
+    background-color:  #76927F;
+    height: 30px;
+    width: 30px;
 }
-.background_number_article_1{
-    margin-bottom: 10px;
-    height: 35px;
-    width: 35px;
-    background-color: #76927F;
-    transform: rotate(-20deg)
-
-}
-.background_number_article_2{
-    margin-bottom: 10px;
-    height: 35px;
-    width: 35px;
+.background_number_2{
     background-color: #AA5D61;
-    transform: rotate(-20deg)
-
-} 
-.background_number_article_3{
-    margin-bottom: 10px;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
+}
+.background_number_3{
     background-color: #2D6F8A;
-    transform: rotate(-20deg)
-
-} 
+    height: 30px;
+    width: 30px;
+}
+.background_number_1, .background_number_2, .background_number_3 {
+    transform: rotate(-20deg);
+    position: absolute;
+    margin: 10px 0 0 10px;
+}
 .number_article{
     color: #ffffff;
     transform: rotate(20deg);
-    padding: 9px 0 0 9px; 
-} 
+    padding: 3px 0 0 7px;
 
+}
+.article_content_1{
+    background-color:  #ADCEB8;
+}
+
+.article_content_2{
+    background-color: #ECC7A1;
+}
+
+.article_content_3{
+    background-color: #CAEADE;
+}
+.article_content_1, .article_content_2, .article_content_3{
+    transition: 1s all;
+}
+.article_content_1:hover, .article_content_2:hover, .article_content_3:hover {
+    transform: scale(1.06);
+}
+.footer_article {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+/* fin main */
+
+/* debut bottom */
+#bottom {
+    margin-top: 50px;
+    padding-top: 5px;
+    padding-bottom: 70px;
+    background-color: #AA5D60;
+    height: 300px;
+    width: 100%;
+}
+.bottom_content img {
+    float: right;
+    height: auto;
+    width: 28%
+}
+.bottom_content h1 {
+    color: #ffffff;
+    font-size: 35px;
+}
+.title_p {
+    color: #ffffff;
+    font-size: 20px;
+}
+.bottom_content hr {
+    width: 100%;
+    margin: 0;
+    border: 0.5px solid #5a5a5a;
+}
+/* fin bottom */
+/* debut footer */
+#footer {
+    text-align: center;
+}
