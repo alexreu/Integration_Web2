@@ -67,6 +67,7 @@
 /* ----------------------------- */
 body{
     background-color: #F8F9EB;
+    font-family: 'Oswald', sans-serif;
 }
 hr {
     border: 2px solid #ffffff;
@@ -146,7 +147,7 @@ main {
 .number_article{
     color: #ffffff;
     transform: rotate(20deg);
-    padding: 3px 0 0 7px;
+    padding: 3px 0 0 9px;
 
 }
 .article_content_1{
@@ -199,8 +200,18 @@ main {
     margin: 0;
     border: 0.5px solid #5a5a5a;
 }
-/* fin bottom */
+/* fin bottom */ 
+
 /* debut footer */
 #footer {
     text-align: center;
+}
+.footer_link a {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+.footer_link a:hover {
+    color: rgb(212, 116, 121);
+    text-decoration: none;
 }
