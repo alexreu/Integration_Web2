@@ -93,44 +93,20 @@ header {
     background: url(../img/index.png), url(../img/particles.png), url(../img/index_fond.png);
     background-repeat: no-repeat;
     background-position-x: center;
+    display: flex;
+    justify-content: center;
 }
 .logo {
-    background: url(../img/logo.png);
-    background-repeat: no-repeat;
-    background-size: 10%;
-    background-position-x: center;
-    background-position-y: 60px;
-    height: 400px;
+    height: auto;
+    text-align: center;
+    height: 300px;
     width: 100%;
 }
-/* responsive */
-@media screen and (min-width: 1920px) and (max-width:2560px ) {
-    .logo {
-        background-size: 8%;
-    }
-}
-@media screen and (min-width:2560px) and (max-width:3440px){
-    .logo {
-        background-size: 6%;
-    }
-}
-@media screen and (min-width:350px) and (max-width: 850px) {
-    .logo{
-        background-size: 30%;
-    }
-    .container{
-        width: 100%;
-    }
-    .container_small{
-        width: 100%;
-    }
-    .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-/* responsive */
+.logo img{
+    margin-top: 30px;
+    height: auto;
+    width: 12%;
+} 
 
 /* fin header */
 

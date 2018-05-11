@@ -1,0 +1,5 @@
+@media all and (min-width:2560px) and (max-width:3440px){
+    .logo {
+        background-size: 6%;
+    }
+}
